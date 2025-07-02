@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import { LiaTimesSolid } from "react-icons/lia";
 
 const Navbar = () => {
-  const [login, setLogin] = useState(false);
+  const [login, setLogin] = useState(!true);
   const [mobilenav, setMobilenav] = useState(false);
 
   useEffect(() => {

@@ -35,7 +35,6 @@ const Sale = () => {
           image="https://websitedemos.net/t-shirts-store-04/wp-content/uploads/sites/1115/2022/07/product-01-a-300x366.jpg"
         />
       </div>
-      <Button body="Enjoy our holiday collections" />
     </section>
   );
 };
