@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import TodoApp from "./pages/TodoApp";
 import ProductPage from "./pages/ProductPage";
+import ProductDetail from "./pages/Productdetails";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/todo" element={<TodoApp />} />
         <Route path="/product" element={<ProductPage />} />
+        <Route path="/product/:id" element={<ProductDetail />} />
       </Routes>
     </div>
   );

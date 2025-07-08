@@ -31,5 +31,3 @@ const ProductDetail = () => {
 };
 
 export default ProductDetail;
-
-//to={`/product/${product.id}`} key={product.id}
