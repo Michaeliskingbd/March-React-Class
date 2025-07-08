@@ -26,18 +26,6 @@ const Popular = lazy(
 );
 
 const Home = () => {
-  const [count, setCount] = useState(0);
-  useEffect(() => {
-    console.log("count changes"); //Dependency array
-  }, [count]);
-
-  const ic = () => {
-    setCount(count + 1);
-  };
-  const dc = () => {
-    setCount(count - 1);
-  };
-
   return (
     <div>
       <Navbar />
@@ -53,9 +41,6 @@ const Home = () => {
       <Collection />
 
       <Sale />
-      <button onClick={ic}>add</button>
-      <span>{count}</span>
-      <button onClick={dc}>minus</button>
     </div>
   );
 };

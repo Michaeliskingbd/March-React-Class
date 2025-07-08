@@ -4,6 +4,7 @@ import { IoIosMenu } from "react-icons/io";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { LiaTimesSolid } from "react-icons/lia";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [login, setLogin] = useState(!true);
@@ -27,10 +28,18 @@ const Navbar = () => {
         <div className="flex gap-6 items-center font-bold">
           <img className="w-40" src={Logo} alt="" />
           <ul className="lg:flex gap-10 hidden">
-            <li>Product</li>
-            <li>Pricing</li>
+            <Link to="/product">
+              <li>Product</li>
+            </Link>
+            <Link to="/about">
+              <li>About</li>
+            </Link>
+
             <li>Resources</li>
-            <li>Book a demo</li>
+            <Link to="/todo">
+              {" "}
+              <li>To-App</li>
+            </Link>
           </ul>
         </div>
 
@@ -69,10 +78,15 @@ const Navbar = () => {
           data-aos-duration="1000"
         >
           <ul className="space-y-6">
-            <li>Product</li>
-            <li>Pricing</li>
+            <Link to="/product">
+              <li>Product</li>
+            </Link>
+
+            <li>About</li>
             <li>Resources</li>
-            <li>Book a demo</li>
+            <Link to="/todo">
+              <li>Todo app</li>
+            </Link>
           </ul>
           <button
             onClick={handleLogin}

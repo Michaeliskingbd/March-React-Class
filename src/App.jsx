@@ -1,15 +1,19 @@
+import { Route, Router, Routes } from "react-router-dom";
 import "./App.css";
-import Counter from "./components/Counter";
-import User from "./components/User";
-
-import About from "./pages/About";
 import Home from "./pages/Home";
+import About from "./pages/About";
 import TodoApp from "./pages/TodoApp";
+import ProductPage from "./pages/ProductPage";
 
 function App() {
   return (
     <div>
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/todo" element={<TodoApp />} />
+        <Route path="/product" element={<ProductPage />} />
+      </Routes>
     </div>
   );
 }
