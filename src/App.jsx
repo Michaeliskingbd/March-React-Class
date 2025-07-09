@@ -5,6 +5,7 @@ import About from "./pages/About";
 import TodoApp from "./pages/TodoApp";
 import ProductPage from "./pages/ProductPage";
 import ProductDetail from "./pages/Productdetails";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/todo" element={<TodoApp />} />
         <Route path="/product" element={<ProductPage />} />
         <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </div>
   );

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import Spinner from "../components/Spinner";
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -13,7 +14,7 @@ const ProductDetail = () => {
       .catch((err) => console.error(err));
   }, [id]);
 
-  if (!product) return <p className="p-4">Loading product...</p>;
+  if (!product) return <Spinner />;
 
   return (
     <div className="p-6 max-w-xl mx-auto">
